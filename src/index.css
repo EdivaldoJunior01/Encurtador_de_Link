@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+button{
+  cursor: pointer;
+}
+.app{
+  display: flex;
+  width: 100%;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;/* tds os itens um abaixo do outro */
+}
