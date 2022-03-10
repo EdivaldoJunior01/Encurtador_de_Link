@@ -22,6 +22,9 @@
      margin-bottom: 34px;
      font-size:19px;
 }
+.logo img{
+     max-width: 450px;
+}
 
 .area-input{
     width: 540px;
@@ -87,7 +90,7 @@
 /* responsividade abaixo */
 @media (max-width:615px){
     .logo img{
-        width: 400px;
+        width: 200px;
     }
     .logo h1{
         font-size: 40px;
