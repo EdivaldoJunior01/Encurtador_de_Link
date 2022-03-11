@@ -5,8 +5,9 @@ import { useState } from 'react';
 import Menu from '../../components/Menu'
 import LinkItem from '../../components/LinkItem';
 
-
 import api from '../../services/api';
+import {saveLink} from '../../services/storeLink'
+
 export default function Home() {
 const [link, setLink] = useState('');
 const [showModal, setShowModal] = useState(false);
@@ -19,6 +20,8 @@ async function handleShortLink(){
         }) 
         setData(response.data);
         setShowModal(true);
+
+        saveLink('@chavelink', response.data);
 
         setLink('');//limpar campo
     }catch{
